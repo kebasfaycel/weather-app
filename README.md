@@ -17,7 +17,7 @@ It allows users to search for a city and instantly get real-time weather informa
 
 ## 🖼️ Preview
 
-![App Screenshot](imgs/icon.svg)  
+![App Screenshot](imgs/weather.png)  
 
 ---
 
