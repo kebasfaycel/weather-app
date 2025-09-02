@@ -32,8 +32,8 @@ It allows users to search for a city and instantly get real-time weather informa
 
 ## 📂 Project Structure
 weather-app/
--│── imgs/ # Weather icons (sun, rain, mist, etc.)
--│── index.html # Main HTML file
--│── style.css # Styling
--│── script.js # Logic & API handling
--└── README.md # Project documentation
+- │── imgs/ # Weather icons (sun, rain, mist, etc.)
+- │── index.html # Main HTML file
+- │── style.css # Styling
+- │── script.js # Logic & API handling
+- └── README.md # Project documentation
