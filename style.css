@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;500;800&family=Chewy&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.be-vietnam-pro-thin {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.be-vietnam-pro-medium {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.be-vietnam-pro-extrabold {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+}
+html {
+  background-image: url(imgs/bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  flex: 0 0 27%;
+  /* border: 3px solid #352f44; */
+  height: 68%;
+  margin-top: 160px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: 2px 2px 3px #5c5470, -1px -1px 3px #5c5470;
+}
+.weather-app > div {
+  margin: 10px;
+}
+.search {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12%;
+  border-radius: 30px;
+  box-shadow: 2px 2px 3px #5c5470, -1px -1px 3px #5c5470;
+}
+.search > input {
+  flex: 0 0 60%;
+  width: 80%;
+  color: #5c5470;
+  height: 80%;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: 0;
+  padding: 5px 15px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.search-icon {
+  flex: 0 0 13%;
+  height: 80%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-icon > img {
+  width: 70%;
+}
+.search:hover {
+  transform: scale(1.07);
+  transition: all ease-in-out 0.5s;
+}
+.search-icon:hover {
+  transform: scale(1.2);
+  transition: all ease-in-out 0.5s;
+}
+.weather-img {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather-img > img {
+  width: 50%;
+  display: none;
+}
+.temp {
+  font-size: 3rem;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #352f44;
+}
+.city {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #5c5470;
+  text-shadow: #352f44 0px 2px;
+}
+.else {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.else > div {
+  flex: 0 0 50%;
+  color: #5c5470;
+}
+.humidity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.humidity span {
+  display: block;
+}
+.humidity > img {
+  width: 35%;
+  display: block;
+}
+.wind-speed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.wind-speed span {
+  display: block;
+}
+.wind-speed > img {
+  width: 35%;
+  display: block;
+}
+@media screen and (max-width: 500px) {
+  .weather-app {
+    flex: 0 0 90%;
+    height: 70%;
+  }
+  .search {
+    height: 10%;
+  }
+  html {
+    background-image: url(imgs/phone_bg.svg);
+    font-size: 22px;
+  }
+}
